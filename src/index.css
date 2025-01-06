@@ -1,0 +1,58 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+}
+
+@keyframes bounce-x {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(80px);
+    }
+  }
+  
+  @keyframes bounce-y {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(80px);
+    }
+  }
+  
+  @keyframes bounce-diagonal {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(80px, 80px);
+    }
+  }
+  
+  /* Extender animaciones en TailwindCSS */
+  .animate-bounce-x {
+    animation: bounce-x 6s ease-in-out infinite;
+  }
+  
+  .animate-bounce-y {
+    animation: bounce-y 6s ease-in-out infinite;
+  }
+  
+  .animate-bounce-diagonal {
+    animation: bounce-diagonal 6s ease-in-out infinite;
+  }
+  
